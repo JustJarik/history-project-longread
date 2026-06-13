@@ -60,7 +60,7 @@ h2 { color: #8c2727; border-bottom: 1px solid #e3d3c4; padding-bottom: 10px; }
 .artifact-card:hover .artifact-overlay { opacity: 1; }
 .code-text { background: #ebdcd0; padding: 5px 10px; font-family: monospace; font-size: 1.2em; display: inline-block; letter-spacing: 2px; }
 input[type="text"] {
-    padding: 10px; font-size: 1em; margin: 10px 0; box-box-sizing: border-box; border: 1px solid #c8b9ac; width: 100%;
+    padding: 10px; font-size: 1em; margin: 10px 0; box-sizing: border-box; border: 1px solid #c8b9ac; width: 100%;
 }
 button {
     background: #8c2727; color: #fff; border: none; padding: 12px 20px; font-size: 1em; cursor: pointer; transition: background 0.2s;
