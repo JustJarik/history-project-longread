@@ -1,6 +1,5 @@
 function checkHexKey() {
     let input = document.getElementById('hex-input').value.replace(/\s+/g, '').toUpperCase();
-    // Эталонный HEX для слова "Рылеевская"
     let correctHex = "D0A0D18BD0BBD0B5D0B5D0B2D181D0BAD0B0D18F";
     let output = document.getElementById('crypto-output');
 
@@ -34,6 +33,7 @@ function handleFork(option) {
     document.getElementById('fork-zone').style.display = 'none';
     document.getElementById('hidden-story').style.display = 'block';
 }
+
 let currentIndex = 0;
 
 function moveCarousel(direction) {
@@ -44,11 +44,14 @@ function moveCarousel(direction) {
     currentIndex += direction;
 
     if (currentIndex >= totalCards) {
-        currentIndex = 0; 
+        currentIndex = 0;
     } else if (currentIndex < 0) {
-        currentIndex = totalCards - 1; 
+        currentIndex = totalCards - 1;
     }
 
+    const offset = -currentIndex * 320;
+    track.style.transform = `translateX(${offset}px)`;
+}
     const offset = -currentIndex * 320;
     track.style.transform = `translateX(${offset}px)`;
 }
