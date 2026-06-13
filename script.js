@@ -34,24 +34,3 @@ function handleFork(option) {
     document.getElementById('hidden-story').style.display = 'block';
 }
 
-let currentIndex = 0;
-
-function moveCarousel(direction) {
-    const track = document.getElementById('carouselTrack');
-    const cards = track.getElementsByClassName('artifact-card');
-    const totalCards = cards.length;
-
-    currentIndex += direction;
-
-    if (currentIndex >= totalCards) {
-        currentIndex = 0;
-    } else if (currentIndex < 0) {
-        currentIndex = totalCards - 1;
-    }
-
-    const offset = -currentIndex * 320;
-    track.style.transform = `translateX(${offset}px)`;
-}
-    const offset = -currentIndex * 320;
-    track.style.transform = `translateX(${offset}px)`;
-}
