@@ -1,0 +1,79 @@
+body {
+    background-color: #f4eae1;
+    color: #2b2621;
+    font-family: "Georgia", serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.main-header {
+    background-color: #362e26;
+    color: #f4eae1;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 5px solid #8c2727;
+}
+.main-header h1 { margin: 0; font-size: 2.5em; font-weight: normal; }
+.main-header h2 { margin: 10px 0 0 0; font-size: 1.3em; color: #bda38f; font-style: italic; }
+.author-badge { margin-top: 20px; font-size: 0.9em; opacity: 0.8; }
+.chapter {
+    background: #fffdfa;
+    padding: 40px;
+    margin: 40px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-radius: 4px;
+}
+h2 { color: #8c2727; border-bottom: 1px solid #e3d3c4; padding-bottom: 10px; }
+.interactive-box {
+    background: #fdf8f2;
+    border-left: 4px solid #8c2727;
+    padding: 20px;
+    margin: 30px 0;
+}
+.instruction { font-style: italic; color: #665; }
+.gallery-grid {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+.artifact-card {
+    position: relative;
+    flex: 1;
+    background: #f4eae1;
+    border: 1px solid #dcd1c4;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    height: 180px;
+}
+.artifact-placeholder { font-size: 2.5em; margin-bottom: 10px; }
+.artifact-title { font-weight: bold; font-size: 0.9em; }
+.artifact-overlay {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(54, 46, 38, 0.95); color: #fff; opacity: 0;
+    transition: opacity 0.3s ease; padding: 15px; box-sizing: border-box;
+    display: flex; align-items: center; justify-content: center; font-size: 0.85em;
+    text-align: left;
+}
+.artifact-card:hover .artifact-overlay { opacity: 1; }
+.code-text { background: #ebdcd0; padding: 5px 10px; font-family: monospace; font-size: 1.2em; display: inline-block; letter-spacing: 2px; }
+input[type="text"] {
+    padding: 10px; font-size: 1em; margin: 10px 0; box-box-sizing: border-box; border: 1px solid #c8b9ac; width: 100%;
+}
+button {
+    background: #8c2727; color: #fff; border: none; padding: 12px 20px; font-size: 1em; cursor: pointer; transition: background 0.2s;
+}
+button:hover { background: #661c1c; }
+.hint { font-size: 0.85em; color: #776e65; }
+.result-message { margin-top: 15px; font-weight: bold; }
+.success { color: #276936; }
+.fork-buttons button { display: block; width: 100%; text-align: left; margin: 10px 0; }
+.outcome-box { background: #e2edd5; border: 1px solid #cbdba8; padding: 15px; margin-bottom: 20px; font-style: italic; }
+.investigator-note { background: #ebdcd0; padding: 20px; border-radius: 4px; font-style: italic; margin: 20px 0; }
+.main-footer { text-align: center; padding: 40px; color: #776e65; font-size: 0.9em; }
