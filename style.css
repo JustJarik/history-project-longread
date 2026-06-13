@@ -129,3 +129,13 @@ button:hover { background: #661c1c; }
     background: #8c2727;
     border-radius: 3px;
 }
+
+.artifact-image {
+    width: 80px;         
+    height: 80px;        
+    border-radius: 50%;   
+    object-fit: cover;   
+    margin: 0 auto 15px auto; 
+    display: block;      
+    border: 2px solid #dcd1c4; 
+}
