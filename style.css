@@ -76,25 +76,14 @@ button:hover { background: #661c1c; }
 
 .carousel-container {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
     margin-top: 20px;
 }
 
-.carousel-viewport {
-    width: 320px;
-    overflow: hidden;
-    border: 1px solid #dcd1c4;
-    background: #f4eae1;
-    border-radius: 6px;
-}
-
-.carousel-track {
-    display: flex;
-    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-}
-
 .carousel-container .artifact-card {
-    flex: 0 0 320px;
+    flex: 0 1 300px;
     box-sizing: border-box;
     height: 240px;
     background: #fffdfa;
@@ -103,6 +92,8 @@ button:hover { background: #661c1c; }
     text-align: center;
     cursor: pointer;
     user-select: none;
+    border: 1px solid #dcd1c4;
+    border-radius: 6px;
 }
 
 .carousel-container .artifact-card:hover {
