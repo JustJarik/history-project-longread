@@ -1,17 +1,3 @@
-function checkHexKey() {
-    let input = document.getElementById('hex-input').value.replace(/\s+/g, '').toUpperCase();
-    let correctHex = "D0A0D18BD0BBD0B5D0B5D0B2D181D0BAD0B0D18F";
-    let output = document.getElementById('crypto-output');
-
-    if (input === correctHex) {
-        document.getElementById('crypto-step-1').style.display = 'none';
-        document.getElementById('crypto-step-2').style.display = 'block';
-        output.innerText = "";
-    } else {
-        output.innerHTML = "<span style='color: #8c2727;'>❌ Ключ не подходит. Матрица сдвига не нейтрализована. Проверьте символы.</span>";
-    }
-}
-
 function checkSecretWord() {
     let word = document.getElementById('word-input').value.trim().toUpperCase();
     let output = document.getElementById('crypto-output');
@@ -22,7 +8,6 @@ function checkSecretWord() {
         output.innerHTML = "<span style='color: #8c2727;'>❌ Слово не совпадает с кодом цифирной азбуки. Попробуйте еще раз.</span>";
     }
 }
-
 function handleFork(option) {
     let outcome = document.getElementById('fork-outcome');
     if (option === 1) {
