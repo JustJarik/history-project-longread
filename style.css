@@ -163,3 +163,32 @@ button:hover { background: #661c1c; }
     display: block;      
     border: 2px solid #dcd1c4; 
 }
+
+
+.crypto-alphabet-container {
+    text-align: center;
+    margin: 20px 0;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #dcd1c4;
+    border-radius: 4px;
+}
+
+
+.crypto-alphabet-img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+
+    font-family: "Courier New", monospace;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #8c2727;
+    background: #fdf8f2;
+    padding: 2px 8px;
+    border-radius: 4px;
+    border: 1px dashed #e3d3c4;
+}
