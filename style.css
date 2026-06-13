@@ -75,57 +75,66 @@ button:hover { background: #661c1c; }
 .main-footer { text-align: center; padding: 40px; color: #776e65; font-size: 0.9em; }
 
 .carousel-container {
-    position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
     margin-top: 20px;
-    gap: 10px;
 }
 
 .carousel-viewport {
-    width: 320px; 
-    overflow: hidden; 
+    width: 320px;
+    overflow: hidden;
     border: 1px solid #dcd1c4;
     background: #f4eae1;
+    border-radius: 6px;
 }
 
 .carousel-track {
     display: flex;
-    transition: transform 0.4s ease-in-out; 
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .carousel-container .artifact-card {
-    flex: 0 0 320px; 
+    flex: 0 0 320px;
     box-sizing: border-box;
-    height: 220px;
-    background: #f4eae1;
+    height: 240px;
+    background: #fffdfa;
     position: relative;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
     cursor: pointer;
+    user-select: none;
 }
 
-.carousel-btn {
-    background: #362e26;
+.carousel-container .artifact-card:hover {
+    background: #fdf8f2;
+}
+
+.artifact-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(54, 46, 38, 0.98);
     color: #f4eae1;
-    border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-size: 1.2em;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.2s, transform 0.1s;
-    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 0.85em;
+    
+    overflow-y: auto; 
 }
 
-.carousel-btn:hover {
+.artifact-card:hover .artifact-overlay {
+    opacity: 1;
+}
+
+.artifact-overlay::-webkit-scrollbar {
+    width: 6px;
+}
+.artifact-overlay::-webkit-scrollbar-thumb {
     background: #8c2727;
-}
-
-.carousel-btn:active {
-    transform: scale(0.9);
+    border-radius: 3px;
 }
